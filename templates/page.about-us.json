@@ -1,0 +1,73 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "eb7bc2bc-baf9-4c7d-af8e-ce4f68013955": {
+      "type": "custom-image-banner",
+      "custom_css": [
+        "@media only screen and (max-width: 600px) {p.custom-image-banner-text {font-size: 64px; text-align: center; white-space: normal !important; line-height: 64px; } p.custom-image-banner-text::before {top: 4px; left: 4px; -webkit-text-stroke: 1px black; }}",
+        "p.custom-image-banner-text {white-space: nowrap;}"
+      ],
+      "settings": {
+        "title": "About us",
+        "image1": "shopify://shop_images/DSC09220_2.jpg",
+        "image1size": 100,
+        "image1Y": 30,
+        "image1X": 0,
+        "image2": "shopify://shop_images/DSC04297.jpg",
+        "image2size": 100,
+        "image2Y": 50,
+        "image2X": 0,
+        "image3": "shopify://shop_images/DSC04301.jpg",
+        "image3size": 100,
+        "image3Y": 15,
+        "image3X": 50,
+        "padtop": 0,
+        "padbot": 0
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "164876454194976d6e": {
+      "type": "about-section",
+      "custom_css": [
+        "p {font-family: \"Monument Extended\"; text-align: justify; color: black; font-size: 16px;}",
+        "@media screen and (min-width: 750px) {p {font-size: 24px; }}"
+      ],
+      "settings": {
+        "about-text": "<p>Let's make a happy little mountain now. It's a good way of getting rid of all your anxieties and hostilities. See there how easy that is. Sometimes you learn more from your mistakes than you do from your masterpieces. And that's when it becomes fun - you don't have to spend your time thinking about what's happening - you just let it happen. We'll throw some old gray clouds in here just sneaking around and having fun.</p>"
+      }
+    },
+    "3d3e5991-01d1-4dae-b6c5-19a969d47966": {
+      "type": "custom-text-banner",
+      "settings": {
+        "title": "LUNATIC",
+        "subtitle": "Don't be shy, let's get Lunatic",
+        "color": "#ffffff",
+        "bgcolor": "#000000",
+        "padtop": 0,
+        "padbot": 0
+      }
+    }
+  },
+  "order": [
+    "eb7bc2bc-baf9-4c7d-af8e-ce4f68013955",
+    "main",
+    "164876454194976d6e",
+    "3d3e5991-01d1-4dae-b6c5-19a969d47966"
+  ]
+}

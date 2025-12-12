@@ -1,0 +1,33 @@
+{{ 'simple-text-narrow.css' | asset_url | stylesheet_tag }}
+
+<div class="simple-text-narrow-section">
+
+	<h2 class="simple-text-narrow-title">{{ section.settings.simple-text-title-narrow }}</h2>
+
+	<p class="simple-text-narrow">{{ section.settings.simple-text-narrow }}</p>
+
+</div>
+
+{% schema %}
+{
+  "name": "Simple Text Narrow",
+  "settings": [
+    {
+      "type": "richtext",
+      "label": "Title",
+      "id": "simple-text-title-narrow"
+    },
+    {
+      "type": "richtext",
+      "label": "Text",
+      "id": "simple-text-narrow"
+    }
+  ],
+  "presets": [
+    {
+      "category": "Simple Text Narrow",
+      "name": "Simple Text Narrow"
+    }
+  ]
+}
+{% endschema %}

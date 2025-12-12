@@ -1,0 +1,210 @@
+{{ 'custom-image-banner.css' | asset_url | stylesheet_tag }}
+
+<style>
+
+  .custom-image-banner.{{ section.id }}{
+    padding-top: {{ section.settings.padtop | times: 0.5 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padbot | times: 0.5 | round: 0 }}px;
+  }
+
+  .{{ section.id }} .custom-image-banner-section:nth-child(1){
+    background-image: url({{ section.settings.image1 | image_url: width: 4400 }});
+    background-size: {{ section.settings.image1size }}%;
+    background-position: {{ section.settings.image1X }}% {{ section.settings.image1Y }}%;
+  }
+  .{{ section.id }} .custom-image-banner-section:nth-child(2){
+    background-image: url({{ section.settings.image2 | image_url: width: 4400 }});
+    background-size: {{ section.settings.image2size }}%;
+    background-position: {{ section.settings.image2X }}% {{ section.settings.image2Y }}%;
+  }
+  .{{ section.id }} .custom-image-banner-section:nth-child(3){
+    background-image: url({{ section.settings.image3 | image_url: width: 4400 }});
+    background-size: {{ section.settings.image3size }}%;
+    background-position: {{ section.settings.image3X }}% {{ section.settings.image3Y }}%;
+  }
+
+  .{{ section.id }} p.custom-image-banner-text::before{
+    content: "{{ section.settings.title }}";
+}
+
+@media screen and (min-width: 750px) {
+  .custom-image-banner.{{ section.id }}{
+    padding-top: {{ section.settings.padtop }}px;
+    padding-bottom: {{ section.settings.padbot }}px;
+  }
+}
+
+
+</style>
+
+<div class="custom-image-banner {{ section.id }}">
+  <div class="custom-image-banner-content">
+    <div class="custom-image-banner-section">
+
+    </div>
+
+    <div class="custom-image-banner-section">
+      <p class="custom-image-banner-text">{{ section.settings.title }}</p>
+    </div>
+
+    <div class="custom-image-banner-section">
+
+    </div>
+  </div>
+</div>
+
+
+<script>
+
+</script>
+
+
+{% schema %}
+{
+  "name": "Custom Image Banner",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Título",
+      "default": "Título"
+    },
+    {
+      "type": "image_picker",
+      "id": "image1",
+      "label": "Imagen izquierda"
+    },
+    {
+      "type": "range",
+      "id": "image1size",
+      "min": 100,
+      "max": 200,
+      "step": 1,
+      "unit": "%",
+      "label": "Tamaño imagen",
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "image1Y",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Posición imagen Y",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "image1X",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Posición imagen X",
+      "default": 50
+    },
+    {
+      "type": "image_picker",
+      "id": "image2",
+      "label": "Imagen central",
+      "info": "Imagen que va a aparecer en teléfono"
+    },
+    {
+      "type": "range",
+      "id": "image2size",
+      "min": 100,
+      "max": 200,
+      "step": 1,
+      "unit": "%",
+      "label": "Tamaño imagen",
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "image2Y",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Posición imagen Y",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "image2X",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Posición imagen X",
+      "default": 50
+    },
+    {
+      "type": "image_picker",
+      "id": "image3",
+      "label": "Imagen derecha"
+    },
+    {
+      "type": "range",
+      "id": "image3size",
+      "min": 100,
+      "max": 200,
+      "step": 1,
+      "unit": "%",
+      "label": "Tamaño imagen",
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "image3Y",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Posición imagen Y",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "image3X",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "Posición imagen X",
+      "default": 50
+    },
+    {
+      "type": "header",
+      "content": "Section padding"
+    },
+    {
+      "type": "range",
+      "id": "padtop",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Top padding",
+      "default": 48
+    },
+    {
+      "type": "range",
+      "id": "padbot",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Bottom padding",
+      "default": 48
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Image Banner",
+      "category": "section"
+    }
+  ]
+}
+{% endschema %}

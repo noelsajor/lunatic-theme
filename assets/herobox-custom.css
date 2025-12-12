@@ -1,0 +1,64 @@
+.herobox{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+.herobox .leftImg, .rightImg{
+    min-width: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    visibility: hidden;
+}
+
+.herobox a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-decoration: none;
+}
+
+.herobox .leftImg a img, .herobox .rightImg a img{
+    max-width: 27.2rem;
+}
+
+.herobox .leftImg a img, .herobox .rightImg a img:first-child{
+    z-index: 2;
+}
+
+.herobox .leftImg .her-white-stroke, .him-white-stroke{
+    margin-left: -280px;
+    margin-top: -20px;
+    z-index: 1;
+}
+
+@media screen and (max-width: 750px) {
+
+    .herobox{
+        flex-direction: column;
+    }
+
+    .herobox .leftImg, .rightImg{
+        background-position: top;
+    }
+
+    .herobox .leftImg a img, .herobox .rightImg a img{
+        max-width: 22.9rem;
+    }
+
+    .herobox .leftImg a img, .herobox .rightImg a img:first-child{
+        margin-top: 13.4rem;
+    }
+
+    .herobox .leftImg .her-white-stroke, .him-white-stroke{
+        margin-left: -235px;
+        margin-top: 12.4rem;
+        z-index: 1;
+    }
+
+}

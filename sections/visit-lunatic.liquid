@@ -1,0 +1,38 @@
+{{ 'visit-lunatic.css' | asset_url | stylesheet_tag }}
+
+<div class="visit-lunatic-section">
+
+    <div class="visit-lunatic-image">
+        <img src="{{ section.settings.visit_lunatic_image | image_url: width: 2048 }}" alt="" width="{{ image.width }}"
+            height="{{ image.height }}" loading="lazy">
+    </div>
+
+    <div class="visit-lunatic-text">
+
+        <h1>Visit our store in Caracas</h1>
+        <p>Our store is waiting for you to come and take advantage of all the options we have.</p>
+        <p>We are open Monday through Saturday from 10:30 am to 6:00 pm. We have delivery and shipping nationwide.
+        </p>
+        <a class="button" href="/pages/contact">Contact us</a>
+
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "Visit Lunatic",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "visit_lunatic_image",
+      "label": "Image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Visit Lunatic",
+      "category": "Visit Lunatic"
+    }
+  ]
+}
+{% endschema %}

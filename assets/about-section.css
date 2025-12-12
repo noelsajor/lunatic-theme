@@ -1,0 +1,42 @@
+.about-section{
+    width: 72.6rem;
+    padding-bottom: 3.6rem;
+    padding-top: 3.6rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-section-image{
+    height: auto;
+    width: 100%;
+}
+
+.about-section-lunatic-logo{
+    height: auto;
+    width: 344px;
+    margin: 1.6rem 0;
+}
+
+.about-section-text{
+    text-align: center;
+}
+
+@media screen and (max-width: 990px) {
+    .about-section{
+        width: 100%;
+        padding: 3.6rem 9rem;
+    }
+
+    .about-section-lunatic-logo{
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .about-section{
+        padding: 3.6rem 1.5rem;
+    }
+}

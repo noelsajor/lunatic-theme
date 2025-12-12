@@ -1,0 +1,69 @@
+.custom-image-banner{
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
+
+.custom-image-banner-content{
+    min-height: 48rem;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.custom-image-banner-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-image-banner-section{
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.custom-image-banner-section:nth-child(1){
+    display: none;
+}
+.custom-image-banner-section:nth-child(3){
+    display: none;
+}
+
+p.custom-image-banner-text{
+    color: white;
+    font-size: 115px;
+    font-family: "Monument Extended";
+    font-weight: 800;
+    position: relative;
+    margin: 0;
+    position: absolute;
+}
+
+p.custom-image-banner-text::before{
+    position: absolute;
+    top:8px;
+    left: 8px;
+    -webkit-text-stroke: 2px black;
+    color: rgba(255, 255, 255, 0);
+    width: 100%;
+}
+
+@media screen and (min-width: 990px) {
+
+    .custom-image-banner-content{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .custom-image-banner-section:nth-child(1){
+        display: block;
+    }
+    .custom-image-banner-section:nth-child(3){
+        display: block;
+    }
+    
+}
+@media screen and (min-width: 990px) {
+    p.custom-image-banner-text{
+        font-size: 148px;
+    }
+}

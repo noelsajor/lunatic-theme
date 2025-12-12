@@ -1,0 +1,68 @@
+{{ 'multicolumn-custom.css' | asset_url | stylesheet_tag }}
+
+<div class="multicolumn-custom">
+    <div class="left-multicolumn-custom">
+        <img class="multicolumn-custom-image" src="{{ section.settings.left_multicolumn_img | image_url: width: 2048 }}" alt="" width="{{ image.width }}"
+          height="{{ image.height }}" loading="lazy">
+        <p class="multicolumn-custom-text">{{ section.settings.left_multicolumn_text }}</p>
+    </div>
+
+    <div class="right-multicolumn-custom">
+        <img class="multicolumn-custom-image" src="{{ section.settings.right_multicolumn_img | image_url: width: 2048 }}" alt="" width="{{ image.width }}"
+          height="{{ image.height }}" loading="lazy">
+        <p class="multicolumn-custom-text">{{ section.settings.right_multicolumn_text }}</p>
+    </div>
+</div>
+
+<script>
+
+
+function multicolumnCustom() {
+
+  gsap.from(".multicolumn-custom", {
+    opacity: 0,
+    y: 32,
+    scrollTrigger: {
+      trigger: ".multicolumn-custom",
+      start: "top 80%",
+    }
+  });
+
+}
+window.addEventListener("load", multicolumnCustom)
+
+</script>
+
+{% schema %}
+{
+  "name": "Multicolumn Custom",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "left_multicolumn_img",
+      "label": "Left Multicolumn Image"
+    },
+    {
+      "type": "text",
+      "id": "left_multicolumn_text",
+      "label": "Left Multicolumn Text"
+    },
+    {
+      "type": "image_picker",
+      "id": "right_multicolumn_img",
+      "label": "Right Multicolumn Image"
+    },
+    {
+      "type": "text",
+      "id": "right_multicolumn_text",
+      "label": "Right Multicolumn Text"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Multicolumn Custom",
+      "category": "Multicolumn"
+    }
+  ]
+}
+{% endschema %}

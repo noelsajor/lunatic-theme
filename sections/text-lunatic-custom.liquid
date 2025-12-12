@@ -1,0 +1,85 @@
+{{ 'text-lunatic-custom.css' | asset_url | stylesheet_tag }}
+
+
+<div class="text-lunatic-custom">
+    <p>Don't be shy, let's get <span>Lunatic</span></p>
+    <p class="left-lunatic-text">Don't be shy, let's get <span>Lunatic</span></p>
+    <p class="right-lunatic-text">Don't be shy, let's get <span>Lunatic</span></p>
+</div>
+
+<script>
+
+function textLunaticCustom() {
+  // DESKTOP ANIMATION
+  ScrollTrigger.matchMedia({
+    "(min-width:990px)": function () {
+      gsap.to(".left-lunatic-text", {
+        scrollTrigger: {
+          trigger: ".text-lunatic-custom",
+          start: "top center",
+          scrub: "10",
+        },
+        opacity: 1,
+        x: 220,
+        y: 70
+      });
+
+      gsap.to(".right-lunatic-text", {
+        scrollTrigger: {
+          trigger: ".text-lunatic-custom",
+          start: "top center",
+          scrub: "10",
+        },
+        opacity: 1,
+        x: -220,
+        y: -70
+      });
+    }
+  })
+
+
+  // TABLET ANIMATION
+  ScrollTrigger.matchMedia({
+    "(min-width:810px)": function () {
+      gsap.to(".left-lunatic-text", {
+        scrollTrigger: {
+          trigger: ".text-lunatic-custom",
+          start: "top center",
+          scrub: "10",
+        },
+        opacity: 1,
+        y: 70
+      });
+
+      gsap.to(".right-lunatic-text", {
+        scrollTrigger: {
+          trigger: ".text-lunatic-custom",
+          start: "top center",
+          scrub: "10",
+        },
+        opacity: 1,
+        y: -70
+      });
+    }
+  })
+
+}
+
+window.addEventListener("load", textLunaticCustom)
+
+</script>
+
+{% schema %}
+{
+  "name": "Text Lunatic Custom",
+  "settings": [
+
+  ],
+  "presets": [
+    {
+      "name": "Text Lunatic Custom",
+      "category": "Text Lunatic Custom"
+    }
+  ]
+}
+{% endschema %}

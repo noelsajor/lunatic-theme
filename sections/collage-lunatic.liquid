@@ -1,0 +1,81 @@
+{{ 'collage-lunatic.css' | asset_url | stylesheet_tag }}
+
+<div class="collage-lunatic-main">
+
+    <div class="collage-lunatic-section">
+
+        <div class="lunatic-text-box">
+            <img class="lunatic-text" loading="lazy" src="{{ section.settings.lunatic_text | image_url: width: 2048 }}" alt="" width="{{ image.width }}"
+                height="{{ image.height }}">
+        </div>
+
+        <div class="collage-lunatic-content">
+
+            <img class="lunatic-image-1" loading="lazy" src="{{ section.settings.collage_image_1 | image_url: width: 2048 }}" alt="" width="{{ image.width }}"
+                height="{{ image.height }}">
+            <img class="lunatic-image-2" loading="lazy" src="{{ section.settings.collage_image_2 | image_url: width: 2048 }}" alt="" width="{{ image.width }}"
+                height="{{ image.height }}">
+            <img class="lunatic-image-3" loading="lazy" src="{{ section.settings.collage_image_3 | image_url: width: 2048 }}" alt="" width="{{ image.width }}"
+                height="{{ image.height }}">
+
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+    function collageLunatic() {
+        let collageLunaticTl = gsap.timeline({
+
+            scrollTrigger: {
+                trigger: ".collage-lunatic-main",
+                start: "top center",
+                end: "top center",
+                // toggleActions: "play none reverse none"
+            }
+
+        });
+
+        collageLunaticTl.from(".lunatic-image-3", { x: 600, duration: 0.5, ease: "expo" })
+            .from(".lunatic-image-1", { x: -600, duration: 0.4, ease: "expo" }, "-=0.3")
+            .from(".lunatic-image-2", { y: 600, duration: 0.3, ease: "expo" }, "-=0.25")
+
+    }
+
+    window.addEventListener("load", collageLunatic)
+</script>
+
+{% schema %}
+{
+  "name": "Collage Lunatic",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "lunatic_text",
+      "label": "Lunatic Text"
+    },
+    {
+      "type": "image_picker",
+      "id": "collage_image_1",
+      "label": "Left Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "collage_image_2",
+      "label": "Middle Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "collage_image_3",
+      "label": "Right Image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Collage Lunatic",
+      "category": "Collage Lunatic"
+    }
+  ]
+}
+{% endschema %}

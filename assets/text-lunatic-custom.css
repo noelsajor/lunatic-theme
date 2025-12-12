@@ -1,0 +1,88 @@
+@font-face {
+    font-family: "Monument Regular";
+    src: url(https://cdn.shopify.com/s/files/1/0575/3467/7131/files/MonumentExtended-Regular.ttf?v=1649037525);
+}
+
+@font-face {
+    font-family: "Monument Extrabold";
+    src: url(https://cdn.shopify.com/s/files/1/0575/3467/7131/files/MonumentExtended-Ultrabold.ttf?v=1649037524);
+}
+
+.text-lunatic-custom{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    overflow: hidden
+}
+
+.text-lunatic-custom p{
+    margin: 96px auto 64px auto;
+    color: black;
+    padding: 0;
+    text-align: center;
+    font-size: 3.2rem;
+    letter-spacing: 2px;
+    font-family: "Monument Regular" !important;
+}
+
+.text-lunatic-custom p span{
+    font-family: "Monument Extrabold";
+    color: #532775;
+}
+
+.text-lunatic-custom .left-lunatic-text{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 10;
+    color: rgba(0, 0, 0, 0);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    opacity: 0;
+}
+
+.text-lunatic-custom .left-lunatic-text span{
+    color: #53277500;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #532775;
+}
+
+.text-lunatic-custom .right-lunatic-text span{
+    color: #53277500;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #532775;
+}
+
+.text-lunatic-custom .right-lunatic-text{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 10;
+    color: rgba(0, 0, 0, 0);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    opacity: 0;
+}
+
+@media screen and (max-width: 750px) {
+
+    .text-lunatic-custom p{
+        margin: 6.4rem auto 4rem auto;
+        font-size: 2.8rem;
+        letter-spacing: 0%;
+    }
+
+    .text-lunatic-custom .left-lunatic-text{
+        display: none;
+    }
+
+    .text-lunatic-custom .right-lunatic-text{
+        display: none;
+    }
+
+}

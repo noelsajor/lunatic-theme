@@ -1,0 +1,43 @@
+{{ 'about-section.css' | asset_url | stylesheet_tag }}
+
+<div class="about-section">
+
+    <img class="about-section-image" loading="lazy" src="{{ section.settings.about_image | image_url: width: 2048 }}" alt="" width="{{ image.width }}"
+        height="{{ image.height }}" >
+
+    <img class="about-section-lunatic-logo" loading="lazy" src="{{ section.settings.about_lunatic_logo | image_url: width: 2048 }}" alt="" width="{{ image.width }}" height="{{ image.height }}">
+
+    <div class="about-section-text">
+        <p>{{ section.settings.about-text }}</p>
+    </div>
+
+</div>
+
+{% schema %}
+{
+  "name": "About Section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "about_image",
+      "label": "Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "about_lunatic_logo",
+      "label": "Logo"
+    },
+    {
+      "type": "richtext",
+      "id": "about-text",
+      "label": "Text"
+    }
+  ],
+  "presets": [
+    {
+      "name": "About Section",
+      "category": "About Section"
+    }
+  ]
+}
+{% endschema %}

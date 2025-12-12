@@ -1,0 +1,93 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "c37ad1f5-7c23-4709-89fa-dfd2f2f19a39": {
+      "type": "custom-image-banner",
+      "custom_css": [
+        "p.custom-image-banner-text {font-size: 64px; text-align: center; line-height: 64px;}",
+        "p.custom-image-banner-text::before {top: 4px; left: 4px; -webkit-text-stroke: 1px black;}",
+        "@media screen and (min-width: 990px) {p.custom-image-banner-text {font-size: 115px; line-height: 128px; }}"
+      ],
+      "settings": {
+        "title": "Contact Us",
+        "image1": "shopify://shop_images/DSC09220_2.jpg",
+        "image1size": 100,
+        "image1Y": 50,
+        "image1X": 50,
+        "image2": "shopify://shop_images/DSC04297.jpg",
+        "image2size": 100,
+        "image2Y": 50,
+        "image2X": 50,
+        "image3": "shopify://shop_images/DSC04150.jpg",
+        "image3size": 100,
+        "image3Y": 50,
+        "image3X": 50,
+        "padtop": 0,
+        "padbot": 48
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "1648070270e1572c45": {
+      "type": "simple-text-narrow",
+      "custom_css": [
+        "h2 p {font-size: 2rem; font-family: \"Monument Extended\";}",
+        ".simple-text-narrow-section > p {font-family: \"Monument Extended\"; font-size: 1.2rem;}",
+        "@media screen and (min-width: 750px) {.simple-text-narrow-section > p {font-size: 1.6rem; } h2 p {font-size: 2.4rem; }}"
+      ],
+      "settings": {
+        "simple-text-title-narrow": "<p>Come visit us</p>",
+        "simple-text-narrow": "<p>Monday - Saturday: 10:30am - 6:00pm</p><p>Whatsapp: +58 412 0230085</p>"
+      }
+    },
+    "16479694683df922a4": {
+      "type": "google-maps",
+      "settings": {}
+    },
+    "form": {
+      "type": "contact-form",
+      "custom_css": [
+        "h2.title {font-family: \"Monument Extended\"; font-size: 1.6rem;}"
+      ],
+      "settings": {
+        "heading": "Thanks for contacting us. We’ll get back to you as soon as possible",
+        "color_scheme": "background-1",
+        "padding_top": 48,
+        "padding_bottom": 96
+      }
+    },
+    "49b6ccf2-3fc3-4714-91b7-30f09d6acbca": {
+      "type": "custom-text-banner",
+      "settings": {
+        "title": "LUNATIC",
+        "subtitle": "Don't be shy, let's get Lunatic",
+        "color": "#ffffff",
+        "bgcolor": "#000000",
+        "padtop": 0,
+        "padbot": 0
+      }
+    }
+  },
+  "order": [
+    "c37ad1f5-7c23-4709-89fa-dfd2f2f19a39",
+    "main",
+    "1648070270e1572c45",
+    "16479694683df922a4",
+    "form",
+    "49b6ccf2-3fc3-4714-91b7-30f09d6acbca"
+  ]
+}

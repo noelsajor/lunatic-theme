@@ -1,0 +1,142 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "eb7bc2bc-baf9-4c7d-af8e-ce4f68013955": {
+      "type": "custom-image-banner",
+      "disabled": true,
+      "settings": {
+        "title": "About Us",
+        "image1": "shopify://shop_images/DSC09220_2.jpg",
+        "image1size": 100,
+        "image1Y": 50,
+        "image1X": 50,
+        "image2": "shopify://shop_images/DSC04297.jpg",
+        "image2size": 100,
+        "image2Y": 50,
+        "image2X": 50,
+        "image3": "shopify://shop_images/DSC04301.jpg",
+        "image3size": 100,
+        "image3Y": 50,
+        "image3X": 50,
+        "padtop": 0,
+        "padbot": 96
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "164876454194976d6e": {
+      "type": "about-section",
+      "disabled": true,
+      "custom_css": [
+        "p {font-family: \"Monument Extended\"; text-align: justify; color: black; font-size: 24px;}"
+      ],
+      "settings": {
+        "about-text": "<p>Let's make a happy little mountain now. It's a good way of getting rid of all your anxieties and hostilities. See there how easy that is. Sometimes you learn more from your mistakes than you do from your masterpieces. And that's when it becomes fun - you don't have to spend your time thinking about what's happening - you just let it happen. We'll throw some old gray clouds in here just sneaking around and having fun.</p>"
+      }
+    },
+    "3d3e5991-01d1-4dae-b6c5-19a969d47966": {
+      "type": "custom-text-banner",
+      "disabled": true,
+      "settings": {
+        "title": "LUNATIC",
+        "subtitle": "Don't be shy, let's get Lunatic",
+        "color": "#ffffff",
+        "bgcolor": "#000000",
+        "padtop": 0,
+        "padbot": 0
+      }
+    },
+    "0bf7ed7b-3904-488b-99fc-aae3f294a5e6": {
+      "type": "collection-list",
+      "blocks": {
+        "template--14872987107466__0bf7ed7b-3904-488b-99fc-aae3f294a5e6-featured_collection-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "barrow"
+          }
+        },
+        "0f8fad8a-9947-429e-9a56-6d31ba351e70": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "balenciaga"
+          }
+        },
+        "c4269280-afd4-4218-ae97-a55dd3165a39": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "dolce-gabbana"
+          }
+        },
+        "4ecce46f-6e8e-4265-b347-3a31abd7bcae": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "gucci"
+          }
+        },
+        "template--14872987107466__0bf7ed7b-3904-488b-99fc-aae3f294a5e6-featured_collection-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "palm-angel-s"
+          }
+        },
+        "template--14872987107466__0bf7ed7b-3904-488b-99fc-aae3f294a5e6-featured_collection-3": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "off-white"
+          }
+        }
+      },
+      "block_order": [
+        "template--14872987107466__0bf7ed7b-3904-488b-99fc-aae3f294a5e6-featured_collection-1",
+        "0f8fad8a-9947-429e-9a56-6d31ba351e70",
+        "c4269280-afd4-4218-ae97-a55dd3165a39",
+        "4ecce46f-6e8e-4265-b347-3a31abd7bcae",
+        "template--14872987107466__0bf7ed7b-3904-488b-99fc-aae3f294a5e6-featured_collection-2",
+        "template--14872987107466__0bf7ed7b-3904-488b-99fc-aae3f294a5e6-featured_collection-3"
+      ],
+      "settings": {
+        "title": "BRANDS",
+        "image_ratio": "square",
+        "color_scheme": "background-1",
+        "swipe_on_mobile": false,
+        "show_view_all": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "custom_text_banner_BVLyd6": {
+      "type": "custom-text-banner",
+      "settings": {
+        "title": "LUNATIC",
+        "subtitle": "Don't be shy, let's get Lunatic",
+        "color": "#FFFFFF",
+        "bgcolor": "#000000",
+        "padtop": 0,
+        "padbot": 0
+      }
+    }
+  },
+  "order": [
+    "eb7bc2bc-baf9-4c7d-af8e-ce4f68013955",
+    "main",
+    "164876454194976d6e",
+    "3d3e5991-01d1-4dae-b6c5-19a969d47966",
+    "0bf7ed7b-3904-488b-99fc-aae3f294a5e6",
+    "custom_text_banner_BVLyd6"
+  ]
+}

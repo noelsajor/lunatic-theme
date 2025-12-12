@@ -1,0 +1,151 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "16472063913a6834b1": {
+      "type": "herobox-custom",
+      "settings": {
+        "left_img": "shopify://shop_images/DSC07283_copia.jpg",
+        "right_img": "shopify://shop_images/IMG_7127.jpg",
+        "hero_desktop_size": 720,
+        "hero_mobile_size": 300
+      }
+    },
+    "featured_collection_x4myLK": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "{{ section.settings.collection.title }}",
+        "collection": "new-in",
+        "products_to_show": 8,
+        "color_scheme": "background-1",
+        "show_view_all": true,
+        "swipe_on_mobile": false,
+        "image_ratio": "portrait",
+        "show_secondary_image": true,
+        "show_vendor": true,
+        "show_rating": false,
+        "padding_top": 48,
+        "padding_bottom": 48
+      }
+    },
+    "5083b43d-21b3-4161-bdd7-72ad41122e31": {
+      "type": "custom-image-banner",
+      "settings": {
+        "title": "HIM",
+        "image1": "shopify://shop_images/IMG_7131.jpg",
+        "image1size": 111,
+        "image1Y": 0,
+        "image1X": 87,
+        "image2": "shopify://shop_images/IMG_7128.jpg",
+        "image2size": 113,
+        "image2Y": 0,
+        "image2X": 50,
+        "image3": "shopify://shop_images/IMG_7135.jpg",
+        "image3size": 113,
+        "image3Y": 0,
+        "image3X": 76,
+        "padtop": 0,
+        "padbot": 0
+      }
+    },
+    "164908686785c9ef18": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "",
+        "collection": "man",
+        "products_to_show": 8,
+        "color_scheme": "background-1",
+        "show_view_all": true,
+        "swipe_on_mobile": false,
+        "image_ratio": "portrait",
+        "show_secondary_image": true,
+        "show_vendor": true,
+        "show_rating": false,
+        "padding_top": 32,
+        "padding_bottom": 32
+      }
+    },
+    "bf5a3441-7344-404f-9383-c295e83dcc90": {
+      "type": "custom-image-banner",
+      "settings": {
+        "title": "HER",
+        "image1": "shopify://shop_images/IMG_2443.jpg",
+        "image1size": 127,
+        "image1Y": 19,
+        "image1X": 52,
+        "image2": "shopify://shop_images/IMG_2454.jpg",
+        "image2size": 100,
+        "image2Y": 0,
+        "image2X": 50,
+        "image3": "shopify://shop_images/IMG_2447.jpg",
+        "image3size": 126,
+        "image3Y": 0,
+        "image3X": 50,
+        "padtop": 0,
+        "padbot": 0
+      }
+    },
+    "1649185016046c8551": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "",
+        "collection": "woman",
+        "products_to_show": 8,
+        "color_scheme": "background-1",
+        "show_view_all": true,
+        "swipe_on_mobile": false,
+        "image_ratio": "portrait",
+        "show_secondary_image": true,
+        "show_vendor": true,
+        "show_rating": false,
+        "padding_top": 32,
+        "padding_bottom": 32
+      }
+    },
+    "86f3b008-c42b-4efc-b95d-9137f76b6372": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Sale",
+        "collection": "discount",
+        "products_to_show": 8,
+        "color_scheme": "background-1",
+        "show_view_all": true,
+        "swipe_on_mobile": false,
+        "image_ratio": "portrait",
+        "show_secondary_image": true,
+        "show_vendor": true,
+        "show_rating": false,
+        "padding_top": 48,
+        "padding_bottom": 48
+      }
+    },
+    "8a887ad2-3545-447b-868d-42af270c7ecc": {
+      "type": "custom-text-banner",
+      "settings": {
+        "title": "LUNATIC",
+        "subtitle": "Don't be shy, let's get Lunatic",
+        "color": "#ffffff",
+        "bgcolor": "#000000",
+        "padtop": 48,
+        "padbot": 0
+      }
+    }
+  },
+  "order": [
+    "16472063913a6834b1",
+    "featured_collection_x4myLK",
+    "5083b43d-21b3-4161-bdd7-72ad41122e31",
+    "164908686785c9ef18",
+    "bf5a3441-7344-404f-9383-c295e83dcc90",
+    "1649185016046c8551",
+    "86f3b008-c42b-4efc-b95d-9137f76b6372",
+    "8a887ad2-3545-447b-868d-42af270c7ecc"
+  ]
+}

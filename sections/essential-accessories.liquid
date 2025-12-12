@@ -1,0 +1,130 @@
+{{ 'essential-accessories.css' | asset_url | stylesheet_tag }}
+
+<div class="essential-accessories-section">
+
+    <h2 class="essential-accessories-title">{{ section.settings.essential-accessories-title }}</h2>
+
+    <div class="essential-accessories-content">
+
+        <div class="accessories-image-1">
+            <a class="acc-text" title="Sunglasses" href="/collections/accessories?filter.p.m.my_fields.accessories=SUNGLASSES&sort_by=best-selling">Sunglasses</a>
+        </div>
+        <div class="accessories-image-2">
+            <a class="acc-text" title="Caps" href="/collections/accessories?filter.p.m.my_fields.accessories=CAPS&sort_by=best-selling">Caps</a>
+        </div>
+        <div class="accessories-image-3">
+            <a class="acc-text" title="Phone-Cases" href="/collections/accessories?filter.p.m.my_fields.accessories=PHONE+CASES&sort_by=best-selling">Phone Cases</a>
+        </div>
+        <div class="accessories-image-4">
+            <a class="acc-text" title="Socks" href="/collections/accessories?filter.p.m.my_fields.accessories=SOCKS&sort_by=best-selling">Socks</a>
+        </div>
+
+    </div>
+
+</div>
+
+{%- style -%}
+.essential-accessories-content .accessories-image-1 {
+background-image: url({{ section.settings.sunglasses | image_url: width: 2048 }})
+}
+
+.essential-accessories-content .accessories-image-2 {
+background-image: url({{ section.settings.caps | image_url: width: 2048 }})
+}
+
+.essential-accessories-content .accessories-image-3 {
+background-image: url({{ section.settings.phone-cases | image_url: width: 2048 }})
+}
+
+.essential-accessories-content .accessories-image-4 {
+background-image: url({{ section.settings.socks | image_url: width: 2048 }})
+}
+{%- endstyle -%}
+
+
+<script>
+    const sunglasses = document.querySelector(".accessories-image-1 a")
+    const caps = document.querySelector(".accessories-image-2 a")
+    const phonecases = document.querySelector(".accessories-image-3 a")
+    const socks = document.querySelector(".accessories-image-4 a")
+
+
+    // SUNGLASSES
+
+    sunglasses.addEventListener("mouseenter", () => {
+        sunglasses.classList.add("white-acc")
+    })
+
+    sunglasses.addEventListener("mouseleave", () => {
+        sunglasses.classList.remove("white-acc")
+    })
+
+    // CAPS
+
+    caps.addEventListener("mouseenter", () => {
+        caps.classList.add("white-acc")
+    })
+
+    caps.addEventListener("mouseleave", () => {
+        caps.classList.remove("white-acc")
+    })
+
+    // PHONECASES
+
+    phonecases.addEventListener("mouseenter", () => {
+        phonecases.classList.add("white-acc")
+    })
+
+    phonecases.addEventListener("mouseleave", () => {
+        phonecases.classList.remove("white-acc")
+    })
+
+    // SOCKS
+
+    socks.addEventListener("mouseenter", () => {
+        socks.classList.add("white-acc")
+    })
+
+    socks.addEventListener("mouseleave", () => {
+        socks.classList.remove("white-acc")
+    })
+</script>
+
+{% schema %}
+{
+  "name": "Essential Accessories",
+  "settings": [
+    {
+      "type": "text",
+      "id": "essential-accessories-title",
+      "label": "Title"
+    },
+    {
+      "type": "image_picker",
+      "id": "sunglasses",
+      "label": "Sunglasses"
+    },
+    {
+      "type": "image_picker",
+      "id": "caps",
+      "label": "Caps"
+    },
+    {
+      "type": "image_picker",
+      "id": "phone-cases",
+      "label": "Phone Cases"
+    },
+    {
+      "type": "image_picker",
+      "id": "socks",
+      "label": "Socks"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Essential Accessories",
+      "category": "Essential Accessories"
+    }
+  ]
+}
+{% endschema %}

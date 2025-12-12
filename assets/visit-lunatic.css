@@ -1,0 +1,73 @@
+@font-face {
+    font-family: "Monument Regular";
+    src: url(https://cdn.shopify.com/s/files/1/0575/3467/7131/files/MonumentExtended-Regular.ttf?v=1649037525);
+}
+
+.visit-lunatic-section{
+    max-width: var(--page-width);
+    margin: 6.4rem auto;
+    padding: 0 5rem;
+    display: flex;
+    gap: 8px;
+}
+
+.visit-lunatic-image{
+    height: 512px;
+    width: 45%;
+    overflow: hidden;
+}
+
+.visit-lunatic-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.visit-lunatic-text{
+    height: 512px;
+    background-color: #f9f9f9;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 5%;
+    align-items: flex-start;
+}
+
+.visit-lunatic-text h1{
+    font-family: "Monument Regular";
+    font-size: 2.4rem;
+}
+
+.visit-lunatic-text a{
+    margin-top: 48px;
+}
+
+@media screen and (max-width: 989px) {
+    .visit-lunatic-section{
+        flex-direction: column;
+    }
+
+    .visit-lunatic-image{
+        width: 100%;
+    }
+    .visit-lunatic-text{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 749px) {
+    .visit-lunatic-image{
+        background-color: aquamarine;
+    }
+    .visit-lunatic-section{
+        padding: 0 1.5rem;
+        gap: 4px;
+    }
+
+    .visit-lunatic-text {
+        align-items: center;
+        text-align: center;
+    }
+
+}

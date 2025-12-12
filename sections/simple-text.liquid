@@ -1,0 +1,33 @@
+{{ 'simple-text.css' | asset_url | stylesheet_tag }}
+
+<div class="simple-text-section">
+
+	<h2 class="simple-text-title">{{ section.settings.simple-text-title }}</h2>
+
+	<p class="simple-text">{{ section.settings.simple-text }}</p>
+
+</div>
+
+{% schema %}
+{
+  "name": "Simple Text",
+  "settings": [
+    {
+      "type": "richtext",
+      "label": "Title",
+      "id": "simple-text-title"
+    },
+    {
+      "type": "richtext",
+      "label": "Text",
+      "id": "simple-text"
+    }
+  ],
+  "presets": [
+    {
+      "category": "Simple Text",
+      "name": "Simple Text"
+    }
+  ]
+}
+{% endschema %}

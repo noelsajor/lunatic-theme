@@ -1,0 +1,77 @@
+.collage-lunatic-main{
+    padding: 0 5rem;
+}
+
+.collage-lunatic-section{
+    max-width: 1200px;
+    margin: 96px auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.lunatic-text-box{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lunatic-text{
+    width: 100%;
+}
+
+.collage-lunatic-content{
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 712px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.lunatic-image-1{
+    width: 35%;
+    padding-bottom: 30%;
+    margin-right: -5%;
+    margin-top: 20%;
+    z-index: -1;
+}
+
+.lunatic-image-2{
+    width: 35%;
+    padding-bottom: 45%;
+    margin-bottom: -60%;
+    z-index: -2;
+}
+
+.lunatic-image-3{
+    width: 35%;
+    padding-bottom: 20%;
+    margin-top: -15%;
+    margin-left: -20%;
+    z-index: -3;
+}
+
+@media only screen and (max-width: 750px) {
+
+    .collage-lunatic-section{
+        margin: 32px auto;
+    }
+
+    .collage-lunatic-main{
+        padding: 0 1.5rem;
+    }
+
+    .lunatic-image-1{
+        width: 45%;
+    }
+    .lunatic-image-2{
+        width: 45%;
+    }
+    .lunatic-image-3{
+        width: 45%;
+    }
+}

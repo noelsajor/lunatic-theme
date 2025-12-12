@@ -1,0 +1,143 @@
+{{ 'herobox-custom.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+{%- endstyle -%}
+
+<style>
+.herobox .leftImg{
+  background-image: url({{ section.settings.left_img | image_url: width: 4400 }});
+}
+
+.herobox .rightImg{
+  background-image: url({{ section.settings.right_img | image_url: width: 4400 }});
+}
+
+.herobox .leftImg, .rightImg{
+  min-height: {{ section.settings.hero_desktop_size }}px;
+}
+
+
+@media screen and (max-width: 750px){
+  .herobox .leftImg, .rightImg{
+    min-height: {{ section.settings.hero_mobile_size }}px;
+  }
+}
+
+</style>
+
+<div class="herobox">
+    <div class="leftImg">
+        <a href="/collections/woman">
+          <img src="https://cdn.shopify.com/s/files/1/0575/3467/7131/files/HERBS.png?v=1649032806" alt="" width="{{ image.width }}"
+            height="{{ image.height }}" loading="lazy">
+          <img class="her-white-stroke" src="https://cdn.shopify.com/s/files/1/0575/3467/7131/files/HERWS.png?v=1649032817" alt="" width="{{ image.width }}"
+            height="{{ image.height }}" loading="lazy">
+        </a>
+    </div>
+    <div class="rightImg">
+        <a href="/collections/man">
+          <img src="https://cdn.shopify.com/s/files/1/0575/3467/7131/files/HIMBS.png?v=1649032828" alt="" width="{{ image.width }}"
+            height="{{ image.height }}" loading="lazy">
+          <img class="him-white-stroke" src="https://cdn.shopify.com/s/files/1/0575/3467/7131/files/HIMWS.png?v=1649032828" alt="" width="{{ image.width }}"
+            height="{{ image.height }}" loading="lazy">
+        </a>
+    </div>
+</div>
+
+<script>
+
+  const leftBtn = document.querySelector(".leftImg a")
+  const rightBtn = document.querySelector(".rightImg a")
+
+
+  const leftSelector = document.querySelectorAll(".leftImg a img")
+  const rightSelector = document.querySelectorAll(".rightImg a img")
+
+
+  //LEFT BUTTON HOVER
+
+  leftBtn.addEventListener("mouseenter", () => {
+    leftSelector[1].src = "https://cdn.shopify.com/s/files/1/0575/3467/7131/files/HERWF.png?v=1649033962"
+    gsap.to(".her-white-stroke", { rotation: 0, x: 4, y: 4, duration: 0.5 })
+  })
+
+  leftBtn.addEventListener("mouseleave", () => {
+    leftSelector[1].src = "https://cdn.shopify.com/s/files/1/0575/3467/7131/files/HERWS.png?v=1649032817"
+    gsap.to(".her-white-stroke", { rotation: 0, x: 0, y: 0, duration: 0.5 })
+  })
+
+
+  //RIGHT BUTTON HOVER
+
+  rightBtn.addEventListener("mouseenter", () => {
+    rightSelector[1].src = "https://cdn.shopify.com/s/files/1/0575/3467/7131/files/HIMWF.png?v=1649033974"
+    gsap.to(".him-white-stroke", { rotation: 0, x: 4, y: 4, duration: 0.5 })
+  })
+
+  rightBtn.addEventListener("mouseleave", () => {
+    rightSelector[1].src = "https://cdn.shopify.com/s/files/1/0575/3467/7131/files/HIMWS.png?v=1649032828"
+    gsap.to(".him-white-stroke", { rotation: 0, x: 0, y: 0, duration: 0.5 })
+  })
+
+
+  function heroAnimation(){
+    gsap.from(".leftImg", { opacity: 0, duration: 0.5, autoAlpha: 0 })
+    gsap.from(".rightImg", { opacity: 0, duration: 0.5, autoAlpha: 0 })
+
+    gsap.from(".leftImg", { x: -2500, duration: 1 })
+    gsap.from(".rightImg", { x: 2500, duration: 1 })
+  }
+
+  window.addEventListener("load", heroAnimation)
+
+  document.addEventListener("shopify:section:load", function(event) {
+    if(event.detail.sectionId === '{{ section.id }}') {
+        heroAnimation()
+    }
+  });
+</script>
+  
+
+{% schema %}
+{
+  "name": "Herobox",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "left_img",
+      "label": "Left Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "right_img",
+      "label": "Right Image"
+    },
+    {
+      "type": "range",
+      "id": "hero_desktop_size",
+      "min": 600,
+      "max": 800,
+      "step": 10,
+      "unit": "px",
+      "label": "Herobox Desktop Size",
+      "default": 760
+    },
+    {
+      "type": "range",
+      "id": "hero_mobile_size",
+      "min": 200,
+      "max": 400,
+      "step": 10,
+      "unit": "px",
+      "label": "Mobile Desktop Size",
+      "default": 300
+    }
+  ],
+  "presets": [
+    {
+      "name": "Herobox",
+      "category": "Herobox"
+    }
+  ]
+}
+{% endschema %}

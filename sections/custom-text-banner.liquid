@@ -1,0 +1,116 @@
+{{ 'custom-text-banner.css' | asset_url | stylesheet_tag }}
+
+<style>
+
+  .custom-text-banner.{{ section.id }}{
+    padding-top: {{ section.settings.padtop | times: 0.5 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padbot | times: 0.5 | round: 0 }}px;
+  }
+
+  .custom-text-banner-content{
+    background-color: {{ section.settings.bgcolor }};
+  }
+  
+  .{{ section.id }} p.custom-text-banner-text{
+      color: {{ section.settings.color }};
+      position: relative;
+  }
+
+  .{{ section.id }} p.custom-text-banner-text::before{
+      content: "{{ section.settings.title }}";
+      -webkit-text-stroke: 2px black;
+      color: rgba(255, 255, 255, 0);
+      position: absolute;
+      top: 4px;
+      left: 4px;
+  }
+
+@media screen and (min-width: 990px) {
+  .custom-text-banner.{{ section.id }} {
+    padding-top: {{ section.settings.padtop }}px;
+    padding-bottom: {{ section.settings.padbot }}px;
+  }
+
+  .{{ section.id }} p.custom-text-banner-text::before{
+    top: 8px;
+    left: 8px;
+  }
+}
+
+
+</style>
+
+<div class="custom-text-banner {{ section.id }}">
+  <div class="custom-text-banner-content">
+    <p class="custom-text-banner-text">{{ section.settings.title }}</p>
+    <p class="custom-text-banner-subtext">{{ section.settings.subtitle }}</p>
+  </div>
+</div>
+
+
+<script>
+
+</script>
+
+
+{% schema %}
+{
+  "name": "Custom Text Banner",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Título",
+      "default": "Título"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtítulo",
+      "default": "Subtítulo"
+    },
+    {
+      "type": "color",
+      "id": "color",
+      "label": "Color texto",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "bgcolor",
+      "label": "Color background",
+      "default": "#000000"
+    },
+    {
+      "type": "header",
+      "content": "Section padding"
+    },
+    {
+      "type": "range",
+      "id": "padtop",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Top padding",
+      "default": 48
+    },
+    {
+      "type": "range",
+      "id": "padbot",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Bottom padding",
+      "default": 48
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Text Banner",
+      "category": "section"
+    }
+  ]
+}
+{% endschema %}
