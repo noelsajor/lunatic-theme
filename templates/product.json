@@ -87,7 +87,7 @@
           "settings": {
             "heading": "Care Instructions",
             "icon": "heart",
-            "content": "<p>Read Manufacturer Guidelines</p>",
+            "content": "<p>{{ product.metafields.my_fields.care_instructions | metafield_tag }}</p>",
             "page": ""
           }
         },
