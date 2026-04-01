@@ -38,7 +38,7 @@
     "5083b43d-21b3-4161-bdd7-72ad41122e31": {
       "type": "custom-image-banner",
       "settings": {
-        "title": "HIM",
+        "title": "",
         "image1": "shopify://shop_images/WhatsApp_Image_2026-03-09_at_5.09.38_PM_3.jpg",
         "image1size": 100,
         "image1Y": 0,
@@ -75,7 +75,7 @@
     "bf5a3441-7344-404f-9383-c295e83dcc90": {
       "type": "custom-image-banner",
       "settings": {
-        "title": "HER",
+        "title": "",
         "image1": "shopify://shop_images/WhatsApp_Image_2026-03-09_at_4.28.53_PM_9.jpg",
         "image1size": 116,
         "image1Y": 13,
@@ -129,7 +129,7 @@
     "8a887ad2-3545-447b-868d-42af270c7ecc": {
       "type": "custom-text-banner",
       "settings": {
-        "title": "LUNATIC",
+        "title": "",
         "subtitle": "Don't be shy, let's get Lunatic",
         "color": "#ffffff",
         "bgcolor": "#000000",
