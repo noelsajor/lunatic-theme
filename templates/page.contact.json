@@ -17,7 +17,7 @@
         "@media screen and (min-width: 990px) {p.custom-image-banner-text {font-size: 115px; line-height: 128px; }}"
       ],
       "settings": {
-        "title": "Contact Us",
+        "title": "",
         "image1": "shopify://shop_images/WhatsApp_Image_2026-03-09_at_5.39.29_PM_1.jpg",
         "image1size": 100,
         "image1Y": 50,

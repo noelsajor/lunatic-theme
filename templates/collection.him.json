@@ -12,7 +12,7 @@
     "62be0771-c2ef-4011-82fe-795874f85f4d": {
       "type": "custom-image-banner",
       "settings": {
-        "title": "{{ collection.title }}",
+        "title": "",
         "image1": "shopify://shop_images/WhatsApp_Image_2026-03-09_at_5.09.38_PM_3.jpg",
         "image1size": 100,
         "image1Y": 0,
@@ -74,7 +74,7 @@
     "ddd94eec-ec33-4e4f-9925-a2b10913775c": {
       "type": "custom-text-banner",
       "settings": {
-        "title": "LUNATIC",
+        "title": "",
         "subtitle": "Don't be shy, let's get Lunatic",
         "color": "#ffffff",
         "bgcolor": "#000000",

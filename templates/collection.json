@@ -12,7 +12,7 @@
     "62be0771-c2ef-4011-82fe-795874f85f4d": {
       "type": "custom-image-banner",
       "settings": {
-        "title": "{{ collection.title }}",
+        "title": "",
         "image1": "shopify://shop_images/WhatsApp_Image_2026-03-09_at_4.28.53_PM_10.jpg",
         "image1size": 100,
         "image1Y": 0,
